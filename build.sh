@@ -17,3 +17,5 @@ sed -i -e "1 s/FROM.*/FROM ghcr.io\/golden-containers\/buildpack-deps\:bullseye-
 # Build
 
 docker build --tag ghcr.io/golden-containers/golang:1.17-bullseye 1.17/bullseye
+
+docker push ghcr.io/golden-containers/golang -a
