@@ -13,6 +13,7 @@ cd golang
 # Transform
 
 sed -i -e "1 s/FROM.*/FROM ghcr.io\/golden-containers\/buildpack-deps\:bullseye-scm/; t" -e "1,// s//FROM ghcr.io\/golden-containers\/buildpack-deps\:bullseye-scm/" 1.17/bullseye/Dockerfile
+echo "LABEL $1" >> 1.17/bullseye/Dockerfile
 
 # Build
 
